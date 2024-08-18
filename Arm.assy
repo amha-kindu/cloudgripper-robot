@@ -230,14 +230,10 @@ links:
     name: linear_gear
     connect:
       name: rotation_base
-      # TODO(clairbee): the below "with" must not be neccessary
-      with: /pub/std/metric/m:m2-thru-3
       # TODO(clairbee): fix interface angles in Arm/Arm_linear_gear so that withParams, withInstance and toInstance could be dropped
       withInstance: bottom-right
       withParams:
         turnZ: 90
-      # TODO(clairbee): the below "to" must not be neccessary
-      to: /pub/std/metric/m:m2-hole-4
       toInstance: bottom-right
   - part: fastener/socketheadcap-iso4762
     package: /pub/std/metric/cqwarehouse
@@ -247,8 +243,6 @@ links:
       length: 8
     connect:
       name: rotation_base
-      # # TODO(clairbee): the below "to" must not be neccessary
-      to: /pub/std/metric/m:m2-hole-4
       toInstance: bottom-right
       toParams:
         moveZ: 3
@@ -260,8 +254,6 @@ links:
       length: 8
     connect:
       name: rotation_base
-      # # TODO(clairbee): the below "to" must not be neccessary
-      to: /pub/std/metric/m:m2-hole-4
       toInstance: bottom-left
       toParams:
         moveZ: 3
@@ -273,8 +265,6 @@ links:
       length: 8
     connect:
       name: rotation_base
-      # # TODO(clairbee): the below "to" must not be neccessary
-      to: /pub/std/metric/m:m2-hole-4
       toInstance: top-right
       toParams:
         moveZ: 3
@@ -286,8 +276,6 @@ links:
       length: 8
     connect:
       name: rotation_base
-      # # TODO(clairbee): the below "to" must not be neccessary
-      to: /pub/std/metric/m:m2-hole-4
       toInstance: top-left
       toParams:
         moveZ: 3
