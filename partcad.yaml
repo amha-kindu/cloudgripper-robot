@@ -1,3 +1,13 @@
 desc: Simple example for testing only
 
 
+parts:
+  cube:
+    desc: This is a cube from examples
+    type: cadquery
+    parameters:
+      width:
+        default: 10.0
+      length:
+        default: 10.0
+      height: 10.0
